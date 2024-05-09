@@ -1,0 +1,10 @@
+[host_machine]
+cpu = 'cortext-m4'
+
+[built-in options]
+c_args = ['-DSAM4L', '-mcpu=cortex-m4', '-mfloat-abi=soft', '-mabi=aapcs', '-mthumb']
+c_link_args = ['-mcpu=cortex-m4', '-mfloat-abi=soft', '-mabi=aapcs', '-mthumb']
+
+[properties]
+target = 'sam/4l'
+modules = ['sam/common']

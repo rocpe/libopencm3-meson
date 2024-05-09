@@ -1,0 +1,10 @@
+[host_machine]
+cpu = 'cortex-m4'
+
+[built-in options]
+c_args = ['-DSTM32F4', '-mcpu=cortex-m4', '-mfloat-abi=hard', '-mfpu=fpv4-sp-d16', '-mabi=aapcs', '-mthumb']
+c_link_args = ['-mcpu=cortex-m4', '-mfloat-abi=hard', '-mfpu=fpv4-sp-d16', '-mabi=aapcs', '-mthumb']
+
+[properties]
+target = 'stm32/f4'
+modules = ['ethernet', 'stm32', 'stm32/common', 'usb']

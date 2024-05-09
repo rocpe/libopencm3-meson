@@ -1,0 +1,4 @@
+#!/bin/sh -e
+rm -rf .build
+meson setup .build --cross-file lib/cross.txt
+time ninja -C .build

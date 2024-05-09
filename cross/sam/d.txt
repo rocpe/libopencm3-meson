@@ -1,0 +1,17 @@
+[binaries]
+c = 'arm-none-eabi-gcc'
+ar = 'arm-none-eabi-ar'
+strip = 'arm-none-eabi-strip'
+
+[host_machine]
+system = 'none'
+cpu_family = 'arm'
+cpu = 'cortex-m0plus'
+endian = 'little'
+
+[built-in options]
+c_args = ['-DSAMD', '-mcpu=cortex-m0plus', '-mfloat-abi=soft', '-mabi=aapcs', '-mthumb']
+c_link_args = ['-mcpu=cortex-m0plus', '-mfloat-abi=soft', '-mabi=aapcs', '-mthumb']
+
+[properties]
+target = 'sam/d'
